@@ -1,0 +1,630 @@
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon/icomoon.eot?-9heso');
+	src:url('../fonts/icomoon/icomoon.eot?#iefix-9heso') format('embedded-opentype'),
+		url('../fonts/icomoon/icomoon.woff?-9heso') format('woff'),
+		url('../fonts/icomoon/icomoon.ttf?-9heso') format('truetype'),
+		url('../fonts/icomoon/icomoon.svg?-9heso#icomoon') format('svg');
+}
+
+/*website wide styles*/
+body{
+  margin:0 auto;
+  padding:0;
+}
+
+p{
+  font-family:monospace;
+  font-size: 2vw;
+
+}
+/*float breaks*/
+.clear{
+  clear:both;
+}
+
+/*scroll over styling*/
+
+/*
+#one, #two, #three, #four
+{
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height:100%;
+  position:absolute;
+}
+
+#one {
+    top:0px;
+}
+#two {
+  top:100%;
+}
+#three {
+  top:200%;
+}
+#four {
+  top:300%;
+}
+*/
+
+
+/*
+menu palette
+*/
+#menu{
+  position:fixed;
+  top: 50px;
+  left:50px;
+	width: 100%;
+	text-align: right;
+}
+
+
+/*menu dropdown*/
+#menu-select{
+  margin: 0 auto;
+  padding: 0;
+  position:relative;
+  text-align: center;
+  float: left;
+
+}
+#menu-select > ul{
+	padding:4px;
+}
+#menu-select > li{
+  position: relative;
+	margin-right:15px;
+	float:left;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 17px;
+  border:3px solid #FFFFD6;
+  list-style: none;
+  text-align:center;
+}
+.fa fa-user{
+	font-size: 2em;
+}
+/*
+button activate
+*/
+
+body.nav-open .lower-screen {
+  -webkit-transform: scale(0.8, 0.8);
+  -ms-transform: scale(0.8, 0.8);
+  transform: scale(0.8, 0.8);
+}
+
+body.nav-open .nav {
+  -webkit-transform: translateY(0);
+}
+
+body.nav-open #contact {
+  box-shadow: none;
+}
+
+body.nav-open #contact:before {
+  width: 4000px;
+  height: 4000px;
+  background-color: rgba(8, 188, 221, 0.95);
+}
+
+#contact:before {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #1ee8b6;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transition-duration: 0.66s;
+  transition-duration: 0.66s;
+  -webkit-transition-timing-function: swing;
+  transition-timing-function: swing;
+}
+
+.lower-screen {
+  padding: 60px 0 20px 0;
+  overflow-y: scroll;
+  height: 450px;
+  -webkit-transition-duration: 0.66s;
+  transition-duration: 0.66s;
+  -webkit-transition-timing-function: swing;
+  transition-timing-function: swing;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.lower-screen::-webkit-scrollbar {
+  display: none;
+}
+
+.nav {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  padding: 0 20px;
+  -webkit-transition-duration: 0.66s;
+  transition-duration: 0.66s;
+  -webkit-transition-timing-function: swing;
+  transition-timing-function: swing;
+  -webkit-transform: translateY(100%);
+}
+
+/*
+Contact form
+*/
+
+#contact-form{
+  display:none;
+}
+
+#contact-form.open{
+  display:block;
+  z-index:2;
+}
+
+.simform {
+	position: relative;
+	margin: 0 auto;
+	padding: 2em 0;
+	max-width: 860px;
+	width: 100%;
+	text-align: left;
+	font-size: 2.5em;
+}
+
+.simform .submit {
+	display: none;
+}
+
+/* Question list style */
+.simform ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	-webkit-transition: height 0.4s;
+	transition: height 0.4s;
+}
+
+.simform ol:before {
+	content: '';
+	background-color: rgba(0,0,0,0.1);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2.35em;
+}
+
+.questions li {
+	z-index: 100;
+	position: relative;
+	visibility: hidden;
+	height: 0;
+	-webkit-transition: visibility 0s 0.4s, height 0s 0.4s;
+	transition: visibility 0s 0.4s, height 0s 0.4s;
+}
+
+.questions li.current,
+.no-js .questions li {
+	visibility: visible;
+	height: auto;
+	-webkit-transition: none;
+	transition: none;
+}
+
+/* Labels */
+.questions li > span {
+	display: block;
+	overflow: hidden;
+}
+
+.questions li > span label {
+	display: block;
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+.questions li.current > span label,
+.no-js .questions li > span label {
+	-webkit-transition: none;
+	transition: none;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.show-next .questions li.current > span label {
+	-webkit-animation: moveUpFromDown 0.4s both;
+	animation: moveUpFromDown 0.4s both;
+}
+
+@-webkit-keyframes moveUpFromDown {
+	from { -webkit-transform: translateY(100%); }
+	to { -webkit-transform: translateY(0); }
+}
+
+@keyframes moveUpFromDown {
+	from { -webkit-transform: translateY(100%); transform: translateY(100%); }
+	to { -webkit-transform: translateY(0); transform: translateY(0); }
+}
+
+/* Input field */
+.questions input {
+	display: block;
+	margin: 0.3em 0 0 0;
+	padding: 0.5em 1em 0.5em 0.7em;
+	width: calc(100% - 2em);
+	border: none;
+	background: transparent;
+	color: rgba(0,0,0,0.8);
+	font-size: 1em;
+	line-height: 1;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.questions .current input,
+.no-js .questions input {
+	opacity: 1;
+}
+
+.questions input:focus,
+.simform button:focus {
+	outline: none;
+}
+
+/* Next question button */
+.next {
+	position: absolute;
+	right: 0;
+	bottom: 2.15em; /* padding-bottom of form plus progress bar height */
+	display: block;
+	padding: 0;
+	width: 2em;
+	height: 2em;
+	border: none;
+	background: none;
+	color: rgba(0,0,0,0.4);
+	text-align: center;
+	opacity: 0;
+	z-index: 100;
+	cursor: pointer;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-transform: translateX(-20%);
+	transform: translateX(-20%);
+	pointer-events: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.next:hover {
+	color: rgba(0,0,0,0.5);
+}
+
+.next::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: "\e600";
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'icomoon';
+	line-height: 2;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.next.show {
+	opacity: 1;
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	pointer-events: auto;
+}
+
+/* Progress bar */
+.simform .progress {
+	width: 0%;
+	height: 0.15em;
+	background: rgba(0,0,0,0.3);
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
+
+.simform .progress::before {
+	position: absolute;
+	top: auto;
+	width: 100%;
+	height: inherit;
+	background: rgba(0,0,0,0.05);
+	content: '';
+}
+
+/* Number indicator */
+.simform .number {
+	position: absolute;
+	right: 0;
+	overflow: hidden;
+	margin: 0.4em 0;
+	width: 3em;
+	font-weight: 700;
+	font-size: 0.4em;
+}
+
+.simform .number:after {
+	position: absolute;
+	left: 50%;
+	content: '/';
+	opacity: 0.4;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.simform .number span {
+	float: right;
+	width: 40%;
+	text-align: center;
+}
+
+.simform .number .number-current {
+	float: left;
+}
+
+.simform .number-next {
+	position: absolute;
+	left: 0;
+}
+
+.simform.show-next .number-current {
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+.simform.show-next .number-next {
+	-webkit-animation: moveUpFromDown 0.4s both;
+	animation: moveUpFromDown 0.4s both;
+}
+
+/* Error and final message */
+.simform .error-message,
+.simform .final-message {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity 0.4s;
+	transition: opacity 0.4s;
+}
+
+.simform .error-message {
+	padding: 0.4em 3.5em 0 0;
+	width: 100%;
+	color: rgba(0,0,0,0.7);
+	font-style: italic;
+	font-size: 0.4em;
+}
+
+.final-message {
+	top: 50%;
+	left: 0;
+	padding: 0.5em;
+	width: 100%;
+	text-align: center;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.error-message.show,
+.final-message.show {
+	visibility: visible;
+	opacity: 1;
+}
+
+.final-message.show {
+	-webkit-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+}
+
+/* Final hiding of form / showing message */
+.simform-inner.hide {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, visibility 0s 0.3s;
+	transition: opacity 0.3s, visibility 0s 0.3s;
+}
+
+/* No JS Fallback */
+.no-js .simform {
+	font-size: 1.75em;
+}
+
+.no-js .questions li {
+	padding: 0 0 2em;
+}
+
+.no-js .simform .submit {
+	display: block;
+	float: right;
+	padding: 10px 20px;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	color: rgba(0,0,0,0.4);
+}
+
+.no-js .simform .controls {
+	display: none;
+}
+
+/* Remove IE clear cross */
+input[type=text]::-ms-clear {
+    display: none;
+}
+
+/* Adjust form for smaller screens */
+@media screen and (max-width: 44.75em) {
+	.simform {
+		font-size: 1.8em;
+	}
+}
+
+@media screen and (max-width: 33.5625em) {
+	.simform {
+		font-size: 1.2em;
+	}
+}
+
+/*
+landing page
+*/
+#landing{
+
+}
+
+#grad{
+  position:relative;
+  margin:0 auto;
+  padding:0;
+  width:100%;
+  height:900px;
+  z-index: -1;
+  clear:both;
+}
+
+.jstext {
+  width: 100%;
+  padding-top: 12vh;
+  padding-right: 50px;
+}
+
+.textContainer {
+  position: relative;
+  text-align: left;
+  font-size: 8vw;
+  font-family: 'circularbold', sans-serif;
+  color: #FFFFD6;
+  letter-spacing: -0.38vw;
+  line-height: 0.98;
+  min-height: 88vh;
+  margin: 50px;
+}
+.jstext:after {
+  content: "_";
+  animation: blinking 1s infinite;
+  -webkit-animation: blinking 1s infinite;
+  -moz-animation: blinking 1s infinite;
+  -o-animation: blinking 1s infinite;
+  position: absolute;
+  -webkit-transform: translate(10%, -10%);
+  -moz-transform: translate(10%, -10%);
+  -ms-transform: translate(10%, -10%);
+  transform: translate(10%, -10%);
+}
+
+/*
+list card styles
+*/
+
+
+
+.card-inner{
+  margin:0 auto;
+  padding:50px;
+  width:auto;
+  height:auto;
+}
+
+.card-inner h1{
+  position:relative;
+  margin:40px 0 10px 40px;
+  padding:0;
+  font-size:5vw;
+  float:left;
+}
+
+.decor-block1{
+  position:relative;
+  margin:0 0 0 40px;
+  padding:0;
+  width: 50px;
+  height: 5px;
+  background-color:#000000;
+}
+
+.card-inner time{
+  position:relative;
+  margin:10px 0 0 40px;
+  padding:0;
+  float:left;
+}
+
+.month{
+  font-weight:bold;
+}
+
+.day-year{
+  font-weight:thin;
+  font-style:italic;
+}
+
+.description{
+  margin:0 0 0 40px;
+  width: 500px;
+  height:150px;
+}
+
+.button{
+  position:relative;
+}
+
+.button-list-placement{
+  position:absolute;
+}
+
+.social-media{
+  position:relative;
+  left:50px;
+}
+
+.icon-social{
+  position:relative;
+  margin:3px;
+  float:left;
+  width:30px;
+  height:30px;
+  background-color:#FFFFFF;
+  border-radius:50%;
+}
+
+.card-footer{
+  position:relative;
+  width:100%;
+  margin-bottom:10px;
+  list-style:none;
+}
+
+.card-footer li{
+  margin:0 7px 0 0;
+  float:left;
+}
