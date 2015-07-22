@@ -1,12 +1,12 @@
 /**
- * folio.js v1.0.0
- * http://
+ *folio.js v1.0.0
+ * http://www.nicholaslituczy.com
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
  *
- * Copyright 2015, Nicholas Litucyz
- * http://
+ * Copyright 2015, Nicholas Lituczy
+ * http://www.nicholaslituczy.com
 
               /\‚
             /    \ ‚
@@ -26,7 +26,7 @@
    \|/
 
 
- */
+**/
 
 $(document).ready(function(){
 
@@ -37,27 +37,27 @@ $(document).ready(function(){
   });*/
 
 //resume replace view
-  $('#resume').click(function(){
-	   $('body').toggleClass('nav-open');
+  $('#about').click(function(){
+	   $('body').toggleClass('page-open');
      $('#contact-form').toggleClass('open');
   });
 
 //contact replace view
   $('#contact').click(function(){
-	   $('body').toggleClass('nav-open');
+	   $('body').toggleClass('page-open');
      $('#contact-form').toggleClass('open');
   });
 
 //contact replace view
   $('#twitter').click(function(){
-	   $('body').toggleClass('nav-open');
+	   $('body').toggleClass('page-open');
      $('#contact-form').toggleClass('open');
   });
 // Write some text
 
 
 /* -----------------------
-    GLOBALS
+    Text Data
 -------------------------*/
   var sections = [
   		{	sentence: " am Nicholas Lituczy",
@@ -268,9 +268,9 @@ var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
 var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
 var color2 = "rgb("+r2+","+g2+","+b2+")";
 
- $('body').css({
+ $('#container').css({
    background: "-webkit-gradient(linear, left bottom, right top, from("+color1+"), to("+color2+"))"}).css({
-    background: "-moz-linear-gradient(left, "+color1+" 50%, "+color2+" 100%)"});
+    background: "-moz-linear-gradient(left, "+color1+" 50%, "+color2+" 50%)"});
 
   step += gradientSpeed;
   if ( step >= 1 )
