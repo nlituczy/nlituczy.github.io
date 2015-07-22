@@ -31,10 +31,10 @@
 $(document).ready(function(){
 
 //dropdown menu
-  $('.menu-icon').click(function(){
+  /*$('.menu-icon').click(function(){
   	$(this).toggleClass('open');
     $('#menu-select > li').toggleClass('open');
-  });
+  });*/
 
 //resume replace view
   $('#resume').click(function(){
