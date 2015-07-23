@@ -13,6 +13,7 @@ body{
 }
 
 #container{
+	position: relative;
 	margin: 0 auto;
 	padding: 0;
 	overflow: hidden;
@@ -20,6 +21,12 @@ body{
 /*float breaks*/
 .clear{
   clear:both;
+}
+
+a{
+  font-style: italic;
+  text-decoration: underline;
+  color:#fff;
 }
 
 /*scroll over styling*/
@@ -136,8 +143,8 @@ not in use ========= */
 	 ------------*/
 
 body.page-open .splash:before {
-  width: 4000px;
-  height: 4000px;
+  width: 4500px;
+  height: 4500px;
   background-color: rgba(8, 188, 221, 0.95);
 }
 
@@ -164,7 +171,9 @@ body.page-open .splash:before {
 	 About
 	 ----- */
 
-
+ #about-content{
+   display:none;
+ }
 
 /* ------------
 	 Contact form
@@ -189,6 +198,7 @@ body.page-open .splash:before {
 	width: 100%;
 	text-align: left;
 	font-size: 2.5em;
+  color: #FFF;
 }
 
 .simform .submit {
@@ -283,6 +293,7 @@ body.page-open .splash:before {
 	opacity: 0;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
+  color: #FFF;
 }
 
 .questions .current input,
@@ -334,7 +345,7 @@ body.page-open .splash:before {
 	font-weight: normal;
 	font-style: normal;
 	font-variant: normal;
-	font-family: 'icomoon';
+	font-family: 'FontAwesome';
 	line-height: 2;
 	speak: none;
 	-webkit-font-smoothing: antialiased;
@@ -375,6 +386,7 @@ body.page-open .splash:before {
 	width: 3em;
 	font-weight: 700;
 	font-size: 0.4em;
+  color:#FFF;
 }
 
 .simform .number:after {
@@ -439,6 +451,7 @@ body.page-open .splash:before {
 	text-align: center;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
+  color:#FFF;
 }
 
 .error-message.show,
@@ -514,12 +527,12 @@ landing page
   position: relative;
   text-align: left;
   font-size: 8vw;
-  font-family: 'circularbold', sans-serif;
+  font-family: 'arial', sans-serif;
   color: #FFFFFF;
   letter-spacing: -0.38vw;
   line-height: 0.98;
   min-height: 88vh;
-  margin: 50px;
+  margin: 100px;
 }
 .jstext:after {
   content: "_";
@@ -540,17 +553,19 @@ landing page
 
 #note{
 	position: relative;
-	float: left;
-	margin: 100px;
+	margin: 100px 300px;
 	padding: 100px;
-	width: 100%;
 	font-family: serif;
 	font-size: 2vw;
 	color: #FFF;
-	text-align: center;
-	border: 1px solid #FFF;
+	text-align: left;
+	border: 1px solid #fff;
 }
 
+#note p{
+	margin: 0 auto;
+	width: 80%;
+}
 
 /*
 list card styles

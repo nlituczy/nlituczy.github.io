@@ -76,7 +76,9 @@ $(document).ready(function(){
   		},
   		{	sentence: " build",
   		},
-  		{	sentence: " ",
+  		{	sentence: " am doing another usability test",
+  		},
+  		{	sentence: " making my nth cup of coffee",
   		},
   		{	sentence: " ",
   		},
@@ -89,8 +91,6 @@ $(document).ready(function(){
   		{	sentence: " ",
   		},
   		{	sentence: " ",
-  		},
-  		{	sentence: " doing another usability test",
   		},
   		{	sentence: " ",
   		},
@@ -145,7 +145,7 @@ $(document).ready(function(){
   var lengthSentence = 0;
   var lengthArray = sections.length;
   var forward = true;
-  var beginning = "my name is Nicholas Lituczy and I";
+  var beginning = "I";
   var currentPart = "";
   var interval = 50;
   var opening = false;
@@ -160,7 +160,7 @@ $(document).ready(function(){
   		setTimeout(function(){
   			if(k < beginning.length){
   				if(beginning[k] === "<"){
-  					currentPart += ' <br id="brName">';
+
   					k=k+4;
   				}
   				currentPart += beginning[k];
@@ -168,7 +168,6 @@ $(document).ready(function(){
   				k++;
   				writing(text);
   			}else if(k === (beginning.length)){
-  				currentPart += " <br>";
   				text.html(currentPart);
   				opening = true;
   				writing(text);
