@@ -1,0 +1,31 @@
+#container {
+  display:none;
+}
+
+body{
+  margin: 0 auto;
+  padding: 0;
+  image:;
+  background-color: #EF565A;
+}
+
+.oops {
+  position: relative;
+  top: 50px;
+  display:block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* IE */
+  text-align: center;
+  color: #050937;
+  font-family: "futura-pt";
+}
+
+#oops-1{
+  font-size: 6vw;
+}
+
+#oops-2 {
+  font-size: 4vw;
+}

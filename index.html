@@ -7,192 +7,194 @@
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="author" content="Nichoals Lituczy">
     <title>Nicholas Lituczy</title>
+    <script src="https://use.typekit.net/xbj8fyn.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" media="(max-width: 800px)" type="text/css" href="css/mobile.css">
+    <link rel="stylesheet" media="(min-width: 800px)" type="text/css" href="css/desktop.css">
     <script src="js/modernizr.custom.js"></script>
-    <script src="js/classie.js"></script>
     <script type="text/javascript" src="js/folio.js"></script>
-    <script src="js/stepsForm.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-67444262-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </head>
   <body>
     <div id="container">
+      <canvas id="webwork"></canvas>
 
-<!-- menu element -->
-    <nav id="menu">
-      <!-- <div id="about" class="splash"><i class="fa fa-user icon"></i></div> -->
-      <div id="contact" class="splash"><i class="fa fa-paper-plane-o icon"></i></div>
-      <!-- <div id="twitter" class="splash"><i class="fa fa-twitter icon"></i></div> -->
-    </nav>
+    <!-- menu element -->
+      <nav id="menu" class="menubar">
+        <div id="title-block"><a href="#landing">Nicholas Lituczy</a></div>
+        <ul id="menu-links">
+          <li class="current-page-item"><a href="#work">work</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
 
-    <div class="clear"></div>
-
-<!-- Landing -->
-
-
-<!-- contact form -->
-      <form id="contact-form" class="simform" autocomplete="off" action="mailto:info@nicholaslituczy.com" enctype="text/plain">
-        <div class="simform-inner">
-          <ol class="questions">
-            <li>
-              <span><label for="q1">What is your name?</label></span>
-              <input id="q1" name="q1" type="text"/>
-            </li>
-            <li>
-              <span><label for="q2">What is your email?</label></span>
-              <input id="q2" name="q2" type="text"/>
-            </li>
-            <li>
-              <span><label for="q3">What do you want to talk about?</label></span>
-              <input id="q3" name="q3" type="text"/>
-            </li>
-          </ol><!-- /questions -->
-          <button class="submit" type="submit">Message me!</button>
-          <div class="controls">
-            <button class="next"></button>
-            <div class="progress"></div>
-            <span class="number">
-              <span class="number-current"></span>
-              <span class="number-total"></span>
-            </span>
-            <span class="error-message"></span>
-          </div><!-- / controls -->
-        </div><!-- /simform-inner -->
-        <span class="final-message"></span>
-      </form><!-- /simform -->
-
-<!-- Text print out -->
-
+    <!-- Text print out -->
+      <section  id="landing">
         <div class="textContainer">
-  				<div class="jstext"></div>
-  			</div>
-<!-- Information -->
+          <h1>My name is Nicholas Lituczy and I create captivating experiences.</h1>
+    		</div>
+      </section>
 
-        <div id="note">
-          <i class="fa fa-quote-left"></i>
-          <p>I just built this website and will be updating it constantly so check back for updates or follow the development on <a href="https://github.com/nlituczy/nlituczy.github.io">github</a>.</p>
-        </div>
+    <!-- Project Showcase -->
 
+          <div class="clear"></div>
+
+        <section id="work">
+          <div id="two">
+            <div class="card-inner">
+              <h1 class="card-inner-h1">This is a Title</h1>
+              <div class="clear"></div>
+              <div class="decor-block1"></div>
+              <div class="clear"></div>
+              <time datetime="2015-09-23">
+                <span class="month">September</span>
+                <span class="day-year">23/15</span>
+              </time>
+              <div class="clear"></div>
+              <div class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+              <div class="social-media">
+                <div class="icon-social"></div>
+                <div class="icon-social"></div>
+              </div>
+              <div class="clear"></div>
+              <ul class="card-footer">
+                <li>#tag</li>
+                <li>#tag</li>
+                <li>#tag</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="clear"></div>
+
+          <div id="three">
+            <div class="card-inner">
+              <h1 class="card-inner-h1">This is a Title</h1>
+              <div class="clear"></div>
+              <div class="decor-block1"></div>
+              <div class="clear"></div>
+              <time datetime="2015-09-23">
+                <span class="month">September</span>
+                <span class="day-year">23/15</span>
+              </time>
+              <div class="clear"></div>
+              <div class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+              <div class="social-media">
+                <div class="icon-social"></div>
+                <div class="icon-social"></div>
+              </div>
+              <div class="clear"></div>
+              <ul class="card-footer">
+                <li>#tag</li>
+                <li>#tag</li>
+                <li>#tag</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="clear"></div>
+
+          <div id="four">
+            <div class="card-inner">
+              <h1 class="card-inner-h1">This is a Title</h1>
+              <div class="clear"></div>
+              <div class="decor-block1"></div>
+              <div class="clear"></div>
+              <time datetime="2015-09-23">
+                <span class="month">September</span>
+                <span class="day-year">23/15</span>
+              </time>
+              <div class="clear"></div>
+              <div class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+              <div class="social-media">
+                <div class="icon-social"></div>
+                <div class="icon-social"></div>
+              </div>
+              <div class="clear"></div>
+              <ul class="card-footer">
+                <li>#tag</li>
+                <li>#tag</li>
+                <li>#tag</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+    <!-- About -->
+      <section id="about">
         <div id="about-content">
-          <h1>Test</h1>
+          <h1>I am a digital product designer living in New York City. I specialize at creating engaging experiences and data driven products. My hat collection includes Designer, Strategist, Product Manager, and nascent Front-end Developer. This multi-disciplinary experience allows me to collaborate with or lead interdisciplinary teams focused on creating breakthrough products. </h1>
         </div>
+      </section>
 
-<!-- Project Showcase -->
-<!--
-      <div class="clear"></div>
-
-      <div id="two">
-        <div class="card-inner">
-          <h1 class="card-inner-h1">This is a Title</h1>
-          <div class="clear"></div>
-          <div class="decor-block1"></div>
-          <div class="clear"></div>
-          <time datetime="2015-09-23">
-            <span class="month">September</span>
-            <span class="day-year">23/15</span>
-          </time>
-          <div class="clear"></div>
-          <div class="description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-          <div class="social-media">
-            <div class="icon-social"></div>
-            <div class="icon-social"></div>
-          </div>
-          <div class="clear"></div>
-          <ul class="card-footer">
-            <li>#tag</li>
-            <li>#tag</li>
-            <li>#tag</li>
-          </ul>
+    <!-- contact form -->
+      <section id="contact">
+        <div id="contact-content">
+          <h3>Lets Connect!</h3>
+          <form class="contact-form" action="MAILTO:info@nicholaslituczy.com" method="post" enctype="text/plain">
+            <span class="input input--isao">
+              <input class="input__field input__field--isao" type="text" id="input-38" />
+              <label class="input__label input__label--isao" for="input-38" data-content="First Name">
+                <span class="input__label-content input__label-content--isao">First Name</span>
+              </label>
+            </span>
+            <span class="input input--isao">
+              <input class="input__field input__field--isao" type="text" id="input-39" />
+              <label class="input__label input__label--isao" for="input-39" data-content="Middle Name">
+                <span class="input__label-content input__label-content--isao">Middle Name</span>
+              </label>
+            </span>
+            <span class="input input--isao">
+              <input class="input__field input__field--isao" type="text" id="input-40" />
+              <label class="input__label input__label--isao" for="input-40" data-content="Last Name">
+                <span class="input__label-content input__label-content--isao">Last Name</span>
+              </label>
+            </span>
+            <input type="submit" value="Submit">
+          </form>
         </div>
-      </div>
+      </section>
 
-      <div class="clear"></div>
+    <!-- footer -->
+      <section id="footer">
+        <ul>
+          <li><a href="https://twitter.com/NicLituczy" target="_blank">twitter</a></li>
+          <li><a href="https://www.linkedin.com/pub/nicholas-lituczy/25/b72/566" target="_blank">linkedin</a></li>
+          <li><a href="http://codepen.io/nlituczy/" target="_blank">codepen</a></li>
+          <li><a href="https://www.behance.net/nlituczy9daa" target="_blank">behance</a></li>
+          <li><a href="https://github.com/nlituczy" target="_blank">github</a></li>
+        </ul>
+        <p id="copyright">© Nicholas Lituczy – 2015</p>
+      </section>
 
-      <div id="three">
-        <div class="card-inner">
-          <h1 class="card-inner-h1">This is a Title</h1>
-          <div class="clear"></div>
-          <div class="decor-block1"></div>
-          <div class="clear"></div>
-          <time datetime="2015-09-23">
-            <span class="month">September</span>
-            <span class="day-year">23/15</span>
-          </time>
-          <div class="clear"></div>
-          <div class="description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-          <div class="social-media">
-            <div class="icon-social"></div>
-            <div class="icon-social"></div>
-          </div>
-          <div class="clear"></div>
-          <ul class="card-footer">
-            <li>#tag</li>
-            <li>#tag</li>
-            <li>#tag</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="clear"></div>
-
-      <div id="four">
-        <div class="card-inner">
-          <h1 class="card-inner-h1">This is a Title</h1>
-          <div class="clear"></div>
-          <div class="decor-block1"></div>
-          <div class="clear"></div>
-          <time datetime="2015-09-23">
-            <span class="month">September</span>
-            <span class="day-year">23/15</span>
-          </time>
-          <div class="clear"></div>
-          <div class="description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-          <div class="social-media">
-            <div class="icon-social"></div>
-            <div class="icon-social"></div>
-          </div>
-          <div class="clear"></div>
-          <ul class="card-footer">
-            <li>#tag</li>
-            <li>#tag</li>
-            <li>#tag</li>
-          </ul>
-        </div>
-      </div>
-  -->
-      <script>
-        var theForm = document.getElementById( 'contact-form' );
-
-        new stepsForm( theForm, {
-          onSubmit : function( form ) {
-            // hide form
-            classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
-
-            /*
-            form.submit()
-            or
-            AJAX request (maybe show loading indicator while we don't have an answer..)
-            */
-
-            // let's just simulate something...
-            var messageEl = theForm.querySelector( '.final-message' );
-            messageEl.innerHTML = 'Thank you! I\'ll be in touch.';
-            classie.addClass( messageEl, 'show' );
-          }
-        } );
-      </script>
     </div>
+
+    <img src="assets/responsive_oops-02.png" class="oops">
+    <h2 class="oops" id="oops-1">Too Small</h2>
+    <h3 class="oops" id="oops-2">Mobile version coming soon.</h3>
+
   </body>
 </html>
