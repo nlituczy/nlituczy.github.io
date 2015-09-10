@@ -112,8 +112,8 @@ $(document).ready(function(){
   var lastTime = Date.now();
   function update() {
     var diff = Date.now() - lastTime;
-    for (var frame = 0; frame * 99< diff; frame++) {
-      for (var index = 0; index < balls.length; index++) {
+    for (var frame = 1; frame * 13< diff; frame++) {
+      for (var index = 1; index < balls.length; index++) {
         balls[index].update(canvas);
       }
     }
