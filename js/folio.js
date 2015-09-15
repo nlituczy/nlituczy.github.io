@@ -122,7 +122,7 @@ $(document).ready(function(){
 
   function draw() {
     ctx.globalAlpha=1;
-    ctx.fillStyle = '#F4F1EF';
+    ctx.fillStyle = '#1D2327';
     ctx.fillRect(0,0,canvas.width, canvas.height);
     for (var index = 0; index < balls.length; index++) {
       var ball = balls[index];
