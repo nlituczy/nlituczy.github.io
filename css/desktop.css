@@ -134,19 +134,14 @@ a{
   padding: 0;
   overflow: hidden;
   z-index: -10;
-  -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
-  filter: blur(2px);
  }
 
 .textContainer {
   position: relative;
   text-align: center;
   font-size: 3vw;
-  font-family: "mostra-nuova", ;
-  font-weight: black;
+  font-family: "futura-pt", sans-serif;
+  font-weight: bold;
   font-style: none;
   color: #F4F1EF;
   letter-spacing: 0.38vw;

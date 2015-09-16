@@ -98,7 +98,7 @@ $(document).ready(function(){
     this.draw = function(ctx, can) {
       ctx.beginPath();
       ctx.globalAlpha = .4;
-      ctx.fillStyle = '#EF565A';
+      ctx.fillStyle = '#F4F1EF';
       ctx.arc((0.5 + this.x) | 0, (0.5 + this.y) | 0, 3, 0, TAU, false);
       ctx.fill();
     }
@@ -132,7 +132,7 @@ $(document).ready(function(){
         var ball2 = balls[index2];
         var dist = Math.hypot(ball.x - ball2.x, ball.y - ball2.y);
           if (dist < 100) {
-            ctx.strokeStyle = "#EF565A";
+            ctx.strokeStyle = "#F4F1EF";
             ctx.globalAlpha = 1 - (dist > 100 ? .8 : dist / 150);
             ctx.lineWidth = "2px";
             ctx.moveTo((0.5 + ball.x) | 0, (0.5 + ball.y) | 0);
