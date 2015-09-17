@@ -157,30 +157,33 @@ a{
 
 /* Page Scroll */
 
-   #one, #two, #three, #four
-   {
-   padding: 0px;
-   margin: 0px;
-   width: 100%;
-   height:100%;
-   position:relative;
-   }
 
    #one {
    background-color: aqua;
-   top:0px;
    }
    #two {
-   background-color: #F4F1EF;
-   top:100%;
+     position: relative;
+     top: 50px;
+     display:block;
+     margin: 0 auto;
+     height: auto;
+     z-index: -1;
+
+   }
+   #test{
+     display: block;
+     position: relative;
+     width:100px;
+     height:100px;
+     background-image: url('assets/showcase_DMI.gif') blue;
+     background-repeat: no-repeat;
+     background-position: 0 0;
    }
    #three {
    background-color: aqua;
-   top:200%;
    }
    #four {
    background-color: #FFD532;
-   top:300%;
    }
 
 /* Work Preview */
@@ -190,6 +193,7 @@ a{
   padding:50px;
   width:auto;
   height:auto;
+  overflow:hidden;
 }
 
 .card-inner h1{
@@ -397,41 +401,58 @@ input, textarea:focus, input:focus{
    }
 
 
+/* --  Social Media Buttons ---*/
+
+
+
 /* ---------
     footer
    --------- */
 
 #footer {
   position: relative;
+  margin: 0 auto;
   width: 100%;
-  height: 100px;
+  height: auto;
   background-color: #1D2327;
 }
 
-#footer ul {
-  position: relative;
+.centered{
+  position: absolute;
   margin: 0 auto;
   padding: 0;
-  list-style: none;
-  pointer-events: all;
-  cursor: pointer;
+  width:100%;
+  display:block;
   text-align: center;
 }
 
-#footer li {
-  display: inline;
+.footer-column {
+  margin: 20px;
+  display:inline-block;
+  padding: 0;
+  width: 10%;
+  height: auto;
+  list-style: none;
+  text-align: left;
+  float: left;
+}
+
+.footer-column li {
+  display:block;
   padding: 0px 16px;
-  line-height: 64px;
+  line-height: 20px;
   font-family: "futura-pt";
   font-weight: bold;
   text-transform: uppercase;
   font-size: 14px;
 }
 
-#footer li a {
+.footer-column li a {
   font-style: normal;
   text-decoration: none;
   color:#FF6B6B;
+  pointer-events: all;
+  cursor: pointer;
 }
 
 #copyright {
