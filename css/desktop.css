@@ -1,10 +1,4 @@
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.0.3');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:700);
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
 
@@ -417,24 +411,13 @@ input, textarea:focus, input:focus{
   background-color: #1D2327;
 }
 
-.centered{
-  position: absolute;
-  margin: 0 auto;
-  padding: 0;
-  width:100%;
-  display:block;
-  text-align: center;
-}
-
 .footer-column {
-  margin: 20px;
-  display:inline-block;
+  margin: 11%;
   padding: 0;
-  width: 10%;
-  height: auto;
   list-style: none;
   text-align: left;
   float: left;
+  color: #FF6B6B;
 }
 
 .footer-column li {
@@ -444,7 +427,7 @@ input, textarea:focus, input:focus{
   font-family: "futura-pt";
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .footer-column li a {
@@ -456,6 +439,7 @@ input, textarea:focus, input:focus{
 }
 
 #copyright {
+  padding-bottom: 30px;
   display:block;
   text-align: center;
   color: #F4F1EF;
