@@ -58,6 +58,7 @@ a{
   padding: 0px;
   list-style: none;
   font-family: "futura-pt", sans-serif;
+  font-style: normal;
   font-weight: bold;
   text-transform: uppercase;
 	margin: 0 auto;
@@ -123,7 +124,7 @@ a{
  -------------------*/
 
  #webwork{
-  position: fixed;
+  position: absolute;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -135,10 +136,11 @@ a{
   text-align: center;
   font-size: 3vw;
   font-family: "futura-pt", sans-serif;
-  font-weight: bold;
-  font-style: none;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
   color: #F4F1EF;
-  letter-spacing: 0.38vw;
+  letter-spacing: 0.3vw;
   line-height: 1;
   min-height: 88vh;
   margin: 100px;
@@ -155,29 +157,15 @@ a{
    #one {
    background-color: aqua;
    }
-   #two {
-     position: relative;
-     top: 50px;
-     display:block;
-     margin: 0 auto;
-     height: auto;
-     z-index: -1;
 
-   }
-   #test{
-     display: block;
-     position: relative;
-     width:100px;
-     height:100px;
-     background-image: url('assets/showcase_DMI.gif') blue;
-     background-repeat: no-repeat;
-     background-position: 0 0;
+   #two{
+     height: 700px;
    }
    #three {
-   background-color: aqua;
+   background-color: #F4F1EF;
    }
    #four {
-   background-color: #FFD532;
+   background-color: #F4F1EF;
    }
 
 /* Work Preview */
@@ -185,9 +173,16 @@ a{
 .card-inner{
   margin:0 auto;
   padding:50px;
-  width:auto;
+  width:100%;
   height:auto;
   overflow:hidden;
+}
+
+.showcase-image {
+  position:absolute;
+  margin: -50px;
+  z-index: -1;
+  width: 100%;
 }
 
 .card-inner h1{
