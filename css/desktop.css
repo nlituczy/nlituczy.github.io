@@ -232,6 +232,7 @@ a{
     Work
    ------ */
 
+
 /* Page Scroll */
 
 
@@ -240,10 +241,10 @@ a{
    }
 
    #two{
-     height: 700px;
+     height: 60vw;
    }
    #three {
-     height:724px;
+     height: 60vw;
    }
    #four {
    background-color: #F4F1EF;
@@ -526,6 +527,7 @@ input, textarea:focus, input:focus{
   pointer-events: all;
   cursor: pointer;
   font-size: 12px;
+  line-height: 20px;
 }
 
 #copyright {
