@@ -525,6 +525,7 @@ input, textarea:focus, input:focus{
   color:#FF6B6B;
   pointer-events: all;
   cursor: pointer;
+  font-size: 12px;
 }
 
 #copyright {
