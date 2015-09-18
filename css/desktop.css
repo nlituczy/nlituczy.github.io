@@ -1,6 +1,6 @@
-
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:700);
-@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 
 /* ------------
 	  General
@@ -20,7 +20,6 @@ body{
 }
 
 #container{
-	position: relative;
 	margin: 0 auto;
 	padding: 0;
 	overflow: hidden;
@@ -33,9 +32,23 @@ body{
 }
 
 a{
-  font-style: italic;
-  text-decoration: underline;
-  color:#fff;
+  ont-family: "futura-pt", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 45px;
+  font-size: 16px;
+  display: inline-block;
+  font-style: normal;
+  text-decoration: none;
+  color: #EF565A;
+}
+
+::selection {
+  background: #EF565A; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #EF565A; /* Gecko Browsers */
 }
 
 /* ------------
@@ -50,19 +63,16 @@ a{
 
 #menu {
   position: fixed;
-  top: 0px;
-  left:0px;
   height: 65px;
 	width: 100%;
-	display: block;
   padding: 0px;
   list-style: none;
   font-family: "futura-pt", sans-serif;
   font-style: normal;
   font-weight: bold;
   text-transform: uppercase;
-	margin: 0 auto;
 	z-index: 10;
+  clear: both;
 }
 
 #menu-links {
@@ -97,7 +107,7 @@ a{
 
 #magic-line {
   position: absolute;
-  bottom: -2px;
+  bottom: 11px;
   left: 0;
   width: 100px;
   height: 2px;
@@ -122,29 +132,51 @@ a{
 /* ------------------
     landing page
  -------------------*/
+ #landing {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   margin: -18px 0;
+   padding: -60px;
+ }
 
  #webwork{
   position: absolute;
-  margin: 0;
+  display: block;
+  top: -18px;
   padding: 0;
-  overflow: hidden;
   z-index: -10;
  }
 
 .textContainer {
   position: relative;
   text-align: center;
-  font-size: 3vw;
   font-family: "futura-pt", sans-serif;
-  font-weight: 300;
   font-style: normal;
-  text-transform: uppercase;
   color: #F4F1EF;
-  letter-spacing: 0.3vw;
-  line-height: 1;
   min-height: 88vh;
   margin: 100px;
-  top: 230px;
+  top: 320px;
+}
+.textContainer h1 {
+  font-size: 7vw;
+  font-weight: 100;
+  text-transform: uppercase;
+  line-height: .1;
+  letter-spacing: 0.3vw;
+
+}
+
+.textContainer h2 {
+  font-size: 2vw;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.8;
+}
+
+.decor-break {
+  color: #EF565A;
+  line-height: 1;
 }
 
 /* ------
@@ -162,7 +194,7 @@ a{
      height: 700px;
    }
    #three {
-   background-color: #F4F1EF;
+     height:724px;
    }
    #four {
    background-color: #F4F1EF;
@@ -176,6 +208,18 @@ a{
   width:100%;
   height:auto;
   overflow:hidden;
+  color: #1D2327;
+
+}
+
+.title-card {
+  position: absolute;
+  margin: 20px 0 0 -50px;
+  width: 650px;
+  height: 220px;
+  background-color: #F4F1EF;
+  opacity: .9;
+  z-index: -1;
 }
 
 .showcase-image {
@@ -189,6 +233,7 @@ a{
   position:relative;
   margin:40px 0 10px 40px;
   padding:0;
+  font-family: "futura-pt", sans-serif;
   font-size:5vw;
   float:left;
 }
@@ -199,7 +244,7 @@ a{
   padding:0;
   width: 50px;
   height: 5px;
-  background-color:#000000;
+  background-color: #1D2327;
 }
 
 .card-inner time{
@@ -219,8 +264,8 @@ a{
 }
 
 .description{
-  margin:0 0 0 40px;
-  width: 500px;
+  margin: 12px 0 0 40px;
+  width: 300px;
   height:150px;
 }
 
@@ -407,7 +452,7 @@ input, textarea:focus, input:focus{
 }
 
 .footer-column {
-  margin: 11%;
+  margin: 10% 0 10% 15%;
   padding: 0;
   list-style: none;
   text-align: left;

@@ -29,6 +29,7 @@ $(document).ready(function(){
         } );
     } );
 
+/*
   $(function() {
 
       var $el, leftPos, newWidth,
@@ -59,11 +60,14 @@ $(document).ready(function(){
       });
   });
 
+  */
+
 /* -----------------------
     Background Loop
 -------------------------*/
 
   var canvas = document.querySelector("canvas");
+
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   var ctx = canvas.getContext("2d");
@@ -98,7 +102,7 @@ $(document).ready(function(){
     this.draw = function(ctx, can) {
       ctx.beginPath();
       ctx.globalAlpha = .4;
-      ctx.fillStyle = '#F4F1EF';
+      ctx.fillStyle = '#4A4F52';
       ctx.arc((0.5 + this.x) | 0, (0.5 + this.y) | 0, 3, 0, TAU, false);
       ctx.fill();
     }
@@ -132,7 +136,7 @@ $(document).ready(function(){
         var ball2 = balls[index2];
         var dist = Math.hypot(ball.x - ball2.x, ball.y - ball2.y);
           if (dist < 100) {
-            ctx.strokeStyle = "#F4F1EF";
+            ctx.strokeStyle = "#4A4F52";
             ctx.globalAlpha = 1 - (dist > 100 ? .8 : dist / 150);
             ctx.lineWidth = "2px";
             ctx.moveTo((0.5 + ball.x) | 0, (0.5 + ball.y) | 0);
@@ -150,6 +154,8 @@ $(document).ready(function(){
 /*--------------------
 	 View Stack
 ----------------------*/
+
+/*
   (function(window){
   $.fn.stopAtTop= function () {
       var $this = this,
@@ -198,7 +204,7 @@ $(document).ready(function(){
   $('#three').stopAtTop();
   $('#four').stopAtTop();
 
-
+*/
 
 /*--------------------
 	 Social Media
