@@ -241,10 +241,10 @@ a{
    }
 
    #two{
-     height: 60vw;
+
+
    }
    #three {
-     height: 60vw;
    }
    #four {
    background-color: #F4F1EF;
@@ -252,14 +252,21 @@ a{
 
 /* Work Preview */
 
-.card-inner{
-  margin:0 auto;
-  padding:50px;
-  width:100%;
-  height:auto;
-  overflow:hidden;
+.card-preview{
+  position: relative;
+  margin: 0 auto;
+  padding: 50px;
+  width: 100%;
+  height: 60vw;
+  overflow: hidden;
   color: #1D2327;
+}
 
+.showcase-image {
+  position: absolute;
+  margin: -50px;
+  z-index: -10;
+  width: 100%;
 }
 
 .title-card {
@@ -272,20 +279,13 @@ a{
   z-index: -1;
 }
 
-.showcase-image {
-  position:absolute;
-  margin: -50px;
-  z-index: -1;
-  width: 100%;
-}
-
-.card-inner h1{
-  position:relative;
-  margin:40px 0 10px 40px;
-  padding:0;
+.card-preview h1{
+  position: relative;
+  margin: 40px 0 10px 40px;
+  padding: 0;
   font-family: "futura-pt", sans-serif;
-  font-size:4vw;
-  float:left;
+  font-size: 4vw;
+  float: left;
 }
 
 .decor-block1{
@@ -297,7 +297,7 @@ a{
   background-color: #1D2327;
 }
 
-.card-inner time{
+.card-preview time{
   position:relative;
   margin:10px 0 0 40px;
   padding:0;
